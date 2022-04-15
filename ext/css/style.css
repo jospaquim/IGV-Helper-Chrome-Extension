@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+          box-sizing: border-box;
+}
+#mainPopup {
+    padding: 10px;
+    height: 310px;
+    width: 400px;
+    font-size: 16px;
+      background: #FFD1DD;
+      align-items: center;
+      justify-content: center;
+
+}
+.container1 {
+      display: flex;
+      background: #FFA3BB;
+      border-radius: 7px;
+      padding: 10px;
+      margin: 0 auto;
+}
+.container2 {
+      display: flex;
+      background: #a3ffe0;
+      border-radius: 7px;
+      padding: 10px;
+      margin-top: 10px;
+}
+.titles{
+    font-size: 20px;
+      text-align: center;
+    font-weight: 800;
+    margin: 0 auto;
+}
+.subtitles{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.copy{
+  flex-grow: 1;
+  width: 50%;
+}
+span {
+    display: inline-block;
+    position: relative;
+  }
+
+.copy span {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+form {
+      position: relative;
+      width: 100%;
+}  
+
+form input {
+    display: block;  
+    width: 100%;
+    border: 3px solid;
+    outline: 0;
+    background: #FFF;
+    font-size: 20px;
+    padding: 5px 4px;
+    margin: 5px auto;
+}
+
+form button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    background: #000;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0.08em 0.8em;
+    cursor: pointer;
+}
