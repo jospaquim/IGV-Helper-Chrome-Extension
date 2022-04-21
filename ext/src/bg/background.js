@@ -11,12 +11,11 @@ chrome.extension.onMessage.addListener(
   	chrome.pageAction.show(sender.tab.id);
     sendResponse();
   });
-  const Calcular = () =>{
-    let valorprecio = document.getElementById("price").value; 
-    let newvalue=valorprecio*0.82;
-    document.getElementById("montoSinRedondear").innerHTML = newvalue; 
-    document.getElementById("montoRedondeado").innerHTML = newvalue.toFixed(2); 
+  // Respond to the click on extension Icon
+chrome.browserAction.onClicked.addListener(function (tab) {
+  chrome.tabs.executeScript({
+      file: 'js/jquery.min.js'
+  });
+});
   
-    document.getElementById("montoCopiar").value= newvalue.toFixed(2); 
-  
-   }
+   

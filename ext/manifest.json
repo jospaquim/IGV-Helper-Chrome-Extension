@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Esta extensión te ayuda a extraer el IGV de los productos para rellenar de forma rápida",
-  "homepage_url": "https://deepmation.com",
+  "homepage_url": "https://github.com/jospaquim/IGV-Chrome-Extension",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -12,6 +12,7 @@
   "default_locale": "es",
   "background": {
     "page": "src/bg/background.html",
+    "scripts": ["js/script.js","js/jquery.min.js"],
     "persistent": true
   },
   "browser_action": {
@@ -21,25 +22,18 @@
   },
   "permissions": [
     "clipboardRead",
-    "clipboardWrite"
+    "clipboardWrite","tabs", "http://www.google.com/*","https://cdnjs.cloudflare.com"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
-  ],
-  "content_security_policy": "script-src 'self' https://fonts.googleapis.com/css 'unsafe-eval'; object-src 'self'"
+  "content_scripts": [ {
+      "all_frames": true,
+      "js": [  "js/jquery.min.js" ],
+      "css": ["src/inject/inject.css"],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*","http://www.google.com/*" ],
+      "run_at": "document_start"
+  }],
+  "content_security_policy": "script-src 'unsafe-inline' 'self' 'nonce-2726c7f26c' ; object-src 'self'"
+
 }
+
+

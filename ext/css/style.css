@@ -4,7 +4,7 @@
 }
 #mainPopup {
     padding: 10px;
-    height: 310px;
+    height: 320px;
     width: 400px;
     font-size: 16px;
       background: #FFD1DD;
@@ -17,7 +17,7 @@
       background: #FFA3BB;
       border-radius: 7px;
       padding: 10px;
-      margin: 0 auto;
+      margin-top: 20px;
 }
 .container2 {
       display: flex;

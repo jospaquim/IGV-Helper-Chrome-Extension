@@ -1,34 +1,32 @@
 <!doctype html>
 <link rel="stylesheet" href="../../css/style.css">
-
+<meta http-equiv= "content-security-policy" content="default-src *; style-src 'unsafe-inline' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline'  'unsafe-eval'"/>
 <div id="mainPopup">
-	
-<div class="container1">
-    <div class="copy">
-       <p class="titles">Ingresa el precio </p>
-      <form>
-        <input type="number" placeholder="5.98" required id="price" min="0" step=".01"">
-		<button type="button" id="btnCalcular">Calcular</button>
+  <div class="container2">
+      <div class="copy">
+        <p class="titles">Precio del producto </p>
+        <form>
+          <input type="number" placeholder="5.98" required id="price" min="0" step=".01" ">
+         <!--- <input type="number" placeholder="5.98" required id="price" min="0" step=".01" oninput="getNewPrice(this.value);""> \-->
+         <button type="button" id="btnCalcular" >Calcular</button>
+        </form>
+        <br>
 
-      </form>
-    </div>
-    
-
-</div>
-<div class="container2">
-    <div class="copy">
-		<p class="titles">Resultado </p>
-		<p class="subtitles"> Monto sin redondear: <span id="montoSinRedondear">Ingrese el precio</span></p>
-		<p class="subtitles">Monto redondeado: <span id="montoRedondeado">Ingrese el precio</span> </p>
-		<p id="montoSinRedondear"></p>
-		<form>
-        <input type="text" id="montoCopiar">
-        <button type="button" id="btnCopiar">Copiar</button>
-      </form>
-    </div>
-    
+        <p class="titles">Resultado </p>
+  		  <form>
+            <input type="text" id="montoCopiar" readonly="readonly">
+            <button type="button" id="btnCopiar">Copiar</button>
+        </form>
+      </div>
   </div>
-
-</div>
+  <div class="container1">
+      <div class="copy">
+  		  
+        <form>
+          <input type="text"required id="costumerNames"readonly="readonly">
+  		    <button type="button" id="copiarNombre" >copiar</button>
+        </form>
+      </div>
   </div>
-  <script type="text/javascript" src="../../js/script.js"></script>
+</div>
+<script src="../../js/script.js"></script>
