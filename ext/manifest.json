@@ -12,7 +12,6 @@
   "default_locale": "es",
   "background": {
     "page": "src/bg/background.html",
-    "scripts": ["js/script.js","js/jquery.min.js"],
     "persistent": true
   },
   "browser_action": {
