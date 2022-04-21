@@ -1,6 +1,6 @@
 {
-  "name": "Nerlys Helper  V1.0",
-  "version": "0.0.1",
+  "name": "Nerlys Helper  V1.2",
+  "version": "1.2.0",
   "manifest_version": 2,
   "description": "Esta extensión te ayuda a extraer el IGV de los productos para rellenar de forma rápida",
   "homepage_url": "https://github.com/jospaquim/IGV-Chrome-Extension",
