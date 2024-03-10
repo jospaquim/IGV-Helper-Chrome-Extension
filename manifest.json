@@ -1,8 +1,8 @@
 {
-  "name": "Nerlys Helper  V1.2",
-  "version": "1.2.0",
+  "name": "IGV Helper - Chrome Extension",
+  "version": "1.5.0",
   "manifest_version": 2,
-  "description": "Esta extensión te ayuda a extraer el IGV de los productos para rellenar de forma rápida",
+  "description": "IGV Helper - Chrome Extension es una herramienta esencial para quienes necesitan calcular el precio neto de un producto sin incluir el Impuesto General a las Ventas (IGV). Con solo ingresar el precio de venta, esta extensión realiza el cálculo automáticamente, mostrando el precio neto sin el 18% de IGV. Esto facilita el registro preciso de ventas en el sistema de la SUNAT, donde el precio se ingresa sin el IGV. Además, IGV Helper - Chrome Extension cuenta con una función adicional para generar nombres y apellidos aleatorios, útil para pruebas, datos ficticios y otros propósitos. Ahorra tiempo, evita errores de cálculo y simplifica tus operaciones diarias con esta extensión indispensable.",
   "homepage_url": "https://github.com/jospaquim/IGV-Chrome-Extension",
   "icons": {
     "16": "icons/icon16.png",
@@ -16,7 +16,7 @@
   },
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "Nerlys Helper",
+    "default_title": "IGV Helper - Chrome Extension",
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
