@@ -6,7 +6,7 @@
 
 Esta extensión para Chrome te ayuda a calcular el precio de tus productos sin incluir el IGV (Impuesto General a las Ventas), lo cual es útil para el registro correcto de ventas ante la SUNAT.Además, cuenta con una función adicional para generar nombres y apellidos aleatorios.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/jospaquim/IGV-Helper-Chrome-Extension)
+![GitHub repo size]([https://img.shields.io/github/repo-size/jospaquim/IGV-Helper-Chrome-Extension](https://img.shields.io/github/repo-size/jospaquim/whatsapp-status-downloader))
 [![License: MIT](https://img.shields.io/github/license/jospaquim/IGV-Helper-Chrome-Extension)](https://opensource.org/licenses/MIT)
 
 
