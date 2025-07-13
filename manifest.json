@@ -1,7 +1,7 @@
 {
   "name": "IGV Helper - Chrome Extension",
-  "version": "1.5.0",
-  "manifest_version": 2,
+  "version": "1.6.0",
+  "manifest_version": 3,
   "description": "IGV Helper - Chrome Extension es una herramienta esencial para quienes necesitan calcular el precio neto de un producto sin incluir el Impuesto General a las Ventas (IGV). Con solo ingresar el precio de venta, esta extensión realiza el cálculo automáticamente, mostrando el precio neto sin el 18% de IGV. Esto facilita el registro preciso de ventas en el sistema de la SUNAT, donde el precio se ingresa sin el IGV. Además, IGV Helper - Chrome Extension cuenta con una función adicional para generar nombres y apellidos aleatorios, útil para pruebas, datos ficticios y otros propósitos. Ahorra tiempo, evita errores de cálculo y simplifica tus operaciones diarias con esta extensión indispensable.",
   "homepage_url": "https://github.com/jospaquim/IGV-Helper-Chrome-Extension",
   "icons": {
@@ -11,28 +11,32 @@
   },
   "default_locale": "es",
   "background": {
-    "page": "src/bg/background.html",
-    "persistent": true
+    "service_worker": "src/bg/background.js"
   },
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon19.png",
     "default_title": "IGV Helper - Chrome Extension",
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
     "clipboardRead",
-    "clipboardWrite","tabs", "http://www.google.com/*","https://cdnjs.cloudflare.com"
+    "clipboardWrite"
   ],
-  "content_scripts": [ {
-      "all_frames": true,
-      "js": [  "js/jquery.min.js" ],
-      "css": ["src/inject/inject.css"],
-      "match_about_blank": true,
-      "matches": [ "http://*/*", "https://*/*","http://www.google.com/*" ],
-      "run_at": "document_start"
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [{
+    "all_frames": true,
+    "js": ["js/jquery.min.js"],
+    "css": ["src/inject/inject.css"],
+    "match_about_blank": true,
+    "matches": ["http://*/*", "https://*/*"],
+    "run_at": "document_start"
   }],
-  "content_security_policy": "script-src 'unsafe-inline' 'self' 'nonce-2726c7f26c' ; object-src 'self'"
-
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
 }
 
 

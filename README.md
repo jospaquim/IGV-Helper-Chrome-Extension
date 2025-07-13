@@ -9,10 +9,9 @@ Esta extensión para Chrome te ayuda a calcular el precio de tus productos sin i
 ![GitHub repo size](https://img.shields.io/github/repo-size/jospaquim/IGV-Helper-Chrome-Extension)
 [![License: MIT](https://img.shields.io/github/license/jospaquim/IGV-Helper-Chrome-Extension)](https://opensource.org/licenses/MIT)
 
+**Versión actualizada a Manifest V3 para compatibilidad con Chrome moderno**
 
 </div>
-
-
 
 ## Descripción
 
@@ -27,17 +26,28 @@ Adicionalmente, la extensión incluye una función para generar nombres y apelli
 - Cálculo automático del precio neto sin IGV
 - Visualización del precio neto sin IGV en un campo de salida
 - Interfaz sencilla e intuitiva
+- **Nuevo**: Soporte para tecla Enter para calcular automáticamente
+- **Nuevo**: Notificaciones visuales de éxito/error
 
 ![Captura de pantalla del cálculo de precio sin IGV](./src/img/igv_helper.png)
-
 
 ### Generador de nombres y apellidos
 - Generación aleatoria de nombres y apellidos
 - Opción para generar un solo nombre o un conjunto de nombres
 - Visualización de los nombres generados en un área de texto
+- **Nuevo**: API moderna de portapapeles con fallback para navegadores antiguos
 
 ![Captura de pantalla del generador de nombres y apellidos](./src/img/name_generator.png)
 
+## Actualizaciones en la versión 1.6.0
+
+- ✅ **Migrado a Manifest V3** para compatibilidad con Chrome moderno
+- ✅ **API de portapapeles moderna** con fallback para navegadores antiguos
+- ✅ **Mejor manejo de errores** con notificaciones visuales
+- ✅ **Soporte para tecla Enter** en el campo de precio
+- ✅ **Código JavaScript modernizado** con mejores prácticas
+- ✅ **Seguridad mejorada** con CSP actualizado
+- ✅ **Estructura HTML mejorada** con metadatos apropiados
 
 ## Instalación
 
@@ -52,14 +62,22 @@ Adicionalmente, la extensión incluye una función para generar nombres y apelli
 ### Cálculo de precio sin IGV
 1. Después de instalar la extensión, aparecerá un nuevo icono en la barra de herramientas de Chrome.
 2. Haz clic en el icono para abrir la interfaz de la extensión.
-3. Ingresa el precio de venta con IGV en el campo de entrada correspondiente y luego presionar en CALCULAR.
-4. El precio neto sin IGV se mostrará automáticamente en el campo de salida.
-5. Utiliza este precio neto para registrar correctamente la venta en el sistema de la SUNAT.
+3. Ingresa el precio de venta con IGV en el campo de entrada correspondiente.
+4. Presiona "Calcular" o usa la tecla Enter para calcular automáticamente.
+5. El precio neto sin IGV se mostrará automáticamente en el campo de salida.
+6. Utiliza este precio neto para registrar correctamente la venta en el sistema de la SUNAT.
 
 ### Generador de nombres y apellidos
 1. En la interfaz de la extensión, accede a la sección del generador de nombres y apellidos.
-3. Los apellidos y nombres aleatorios se generan automaticamente en ese orden.
-4. Los nombres generados se mostrarán en el área de texto designada.
+2. Los apellidos y nombres aleatorios se generan automáticamente en ese orden.
+3. Los nombres generados se mostrarán en el área de texto designada.
+4. Presiona "Copiar" para copiar el nombre al portapapeles.
+
+## Compatibilidad
+
+- ✅ Chrome 88+ (Manifest V3)
+- ✅ Edge 88+ (basado en Chromium)
+- ✅ Otros navegadores basados en Chromium
 
 ## Contribución
 
